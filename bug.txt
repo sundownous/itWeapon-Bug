@@ -31,3 +31,23 @@ git pull origin master :원격저장소의 새로운 커밋을 받음
 	git stash pop:변경 사항을 적용하고, 스택에서 제거 한다.
 [출처] [깃 오류 해결 Your local changes to the following files would be overwritten by merge]|작성자 걷지 않는 개발자
 스택이 뭐지 자료구조인가?
+++remote origin already exists. 에러
+깃의 Remote origin already exists 에러는 기존에 연결되어 있는 레파지토리가 다시 새로운 레파지토리에 소스코드를 올리려고 하면 발생되는 에러입니다.
+git remote remove origin 명령어를 입력해서 기존에 연결되어 있는 원격 저장소와의 연결을 끊어줍니다.
+
+ 
+
+
+2. git remote add origin [새롭게 연결할 깃 레파지토리 주소] 명령어를 입력합니다.
+
+ 
+
+
+3. git remote -v 명령어를 입력해서 로컬 저장소를 원격 저장소에 연결시켜줍니다.
+
+ 
+
+
+4. git push origin master 명령어를 입력해서 소스코드를 올리면 됩니다.
+[
+[출처] git Remote origin already exists 에러|작성자 3tjsgh
